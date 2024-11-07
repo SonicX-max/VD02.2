@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.user-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.user-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.user-card img {
+    width: 100px; /* Задаем фиксированную ширину */
+    height: 100px; /* Задаем фиксированную высоту */
+    border-radius: 50%;
+    object-fit: cover; /* Гарантирует, что изображение будет обрезано по центру, если пропорции не совпадают */
+    margin-bottom: 15px;
+}
+
+.user-card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.user-card p {
+    color: #555;
+    margin: 5px 0;
+}
